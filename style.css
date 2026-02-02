@@ -1,0 +1,62 @@
+body {
+  background-color: #ffe6f0;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding-top: 80px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+.buttons {
+  position: relative;
+  margin-top: 40px;
+}
+
+button {
+  font-size: 26px;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#yes {
+  background-color: #ff4d88;
+  color: white;
+}
+
+#no {
+  background-color: #cccccc;
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
+#kisses img {
+  margin-top: 30px;
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+/* kiss animation */
+.kiss {
+  position: absolute;
+  font-size: 30px;
+  animation: floatUp 2s linear forwards;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+}
